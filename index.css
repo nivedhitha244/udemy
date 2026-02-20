@@ -45,6 +45,27 @@ body {
   align-items: center;
   gap: 10px;
 }
+.line_animation {
+  position: relative;
+}
+
+.line_animation p {
+  margin-bottom: 2px;
+}
+
+.courses_line {
+  position: absolute;
+  background-color: black;
+  width: 0%;
+  height: 2px;
+  transition: all ease-in-out 0.7s;
+}
+
+.line_animation:hover .courses_line {
+  transition: all ease-in-out 0.7s;
+  width: 100%;
+}
+
 .list {
   display: flex;
   justify-content: space-around;
@@ -112,8 +133,6 @@ body {
   left: 25px;
   z-index: 1;
 }
-
-
 
 .image_inner_box {
   border: 2px solid black;
@@ -236,19 +255,7 @@ body {
     width: 50%;
   }
 
-  .saleimgcrp {
-    display: block;
-    width: 100%;
-  }
-
-  .saleimg {
-    display: none;
-  }
   .image_inner_box {
-    display: none;
-  }
-
-  .image_inner_box2 h1 {
     display: block;
   }
 
